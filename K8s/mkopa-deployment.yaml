@@ -1,0 +1,143 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mkopa-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: smsservice
+  template:
+    metadata:
+      labels:
+        app: smsservice
+    spec:
+      containers:
+      - name: smsservice
+        image: johnsoncodex/smsservice:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"   
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name:  mkopa-clusterip-service
+spec:
+  selector:
+    app:  smsservice
+  type:  ClusterIP
+  ports:
+  - name:  smsservice
+    port:  80
+    targetPort:  8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rabbitmq-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rabbitmq
+  template:
+    metadata:
+      labels:
+        app: rabbitmq
+    spec:
+      containers:
+      - name: rabbitmq
+        image: rabbit:3-management
+        ports:
+          - containerPort: 15672
+            name:  rbmq-mgmt-port
+          - containerPort: 5672
+            name:  rbmq-mgmt-port
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name:  rabbitmq-clusterip-srv
+spec:
+  selector:
+    app:  rabbitmq
+  type:  ClusterIP
+  ports:
+  - name:  rbmq-mgmt-port
+    protocol: TCP
+    port:  15672
+    targetPort:  15672
+  - name:  rbmq-mgmt-port
+    protocol: TCP
+    port:  5672
+    targetPort:  5672
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name:  rabbitmq-loadbalancer-srv
+spec:
+  selector:
+    app:  rabbitmq
+  type:  LoadBalancer
+  ports:
+  - name:  rbmq-mgmt-port
+    protocol: TCP
+    port:  15672
+    targetPort:  15672
+  - name:  rbmq-mgmt-port
+    protocol: TCP
+    port:  5672
+    targetPort:  5672
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name:  mssql-loadbalancer-srv
+spec:
+  selector:
+    app:  mssql
+  type:  LoadBalancer
+  ports:
+  - protocol:  TCP
+    port:  1433
+    targetPort:  1433
+---
+apiVersion: v1
+kind: Deployment
+metadata:
+  name:  mssql-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mssql
+  template:
+    metadata:
+      labels:
+        app: mssql
+    spec:
+      containers:
+      - image:  mcr.microsoft.com/mssql/server:2017-latest
+        name:  mssql
+        ports:
+        - containerPort: 1433
+        env:
+          - name:  MSSQL_PID
+            value:  "Express"
+          - name:  ACCEPT_EULA
+            value: "Y"
+          - name:  SA_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name:  mssql
+                key: SA_PASSWORD
+        volumeMounts:
+          - name:  mssqldb
+            mountPath:  /var/opt/mssql/data
+      volumes:
+      - name:  mssqldb
+        persistentVolumeClaim:  
+          claimName: mssql-claim

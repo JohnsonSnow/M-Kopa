@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name:  mkopa-np-service
+spec:
+  selector:
+    app:  smsService
+  type:  NodePort
+  ports:
+  - name:  smsService
+    port:  80
+    targetPort:  8080

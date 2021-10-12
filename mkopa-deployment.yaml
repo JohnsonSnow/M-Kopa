@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mkopa-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: smsService
+  template:
+    metadata:
+      labels:
+        app: smsService
+    spec:
+      containers:
+      - name: smsService
+        image: johnsoncodex/smsservice:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"   

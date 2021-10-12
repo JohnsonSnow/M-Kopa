@@ -1,0 +1,15 @@
+C:\Projects\MKopa\MKopa.Core\bin\Debug\net5.0\MKopa.Core.deps.json
+C:\Projects\MKopa\MKopa.Core\bin\Debug\net5.0\MKopa.Core.runtimeconfig.json
+C:\Projects\MKopa\MKopa.Core\bin\Debug\net5.0\MKopa.Core.runtimeconfig.dev.json
+C:\Projects\MKopa\MKopa.Core\bin\Debug\net5.0\MKopa.Core.dll
+C:\Projects\MKopa\MKopa.Core\bin\Debug\net5.0\ref\MKopa.Core.dll
+C:\Projects\MKopa\MKopa.Core\bin\Debug\net5.0\MKopa.Core.pdb
+C:\Projects\MKopa\MKopa.Core\obj\Debug\net5.0\MKopa.Core.csprojAssemblyReference.cache
+C:\Projects\MKopa\MKopa.Core\obj\Debug\net5.0\MKopa.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\MKopa\MKopa.Core\obj\Debug\net5.0\MKopa.Core.AssemblyInfoInputs.cache
+C:\Projects\MKopa\MKopa.Core\obj\Debug\net5.0\MKopa.Core.AssemblyInfo.cs
+C:\Projects\MKopa\MKopa.Core\obj\Debug\net5.0\MKopa.Core.csproj.CoreCompileInputs.cache
+C:\Projects\MKopa\MKopa.Core\obj\Debug\net5.0\MKopa.Core.dll
+C:\Projects\MKopa\MKopa.Core\obj\Debug\net5.0\ref\MKopa.Core.dll
+C:\Projects\MKopa\MKopa.Core\obj\Debug\net5.0\MKopa.Core.pdb
+C:\Projects\MKopa\MKopa.Core\obj\Debug\net5.0\MKopa.Core.genruntimeconfig.cache

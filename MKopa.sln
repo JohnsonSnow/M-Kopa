@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MKopaService", "MKopaService\MKopaService.csproj", "{557E2DEC-66D1-43BA-B306-6E90C655B428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MKopa.Core", "MKopa.Core\MKopa.Core.csproj", "{0716B0D1-A026-4C89-88AA-6EB6C8A679A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "K8s", "K8s", "{27777E2E-23B6-4CA0-94A8-1933BDB7BCA4}"
+	ProjectSection(SolutionItems) = preProject
+		mkopa-deployment.yaml = mkopa-deployment.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{557E2DEC-66D1-43BA-B306-6E90C655B428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{557E2DEC-66D1-43BA-B306-6E90C655B428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{557E2DEC-66D1-43BA-B306-6E90C655B428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{557E2DEC-66D1-43BA-B306-6E90C655B428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0716B0D1-A026-4C89-88AA-6EB6C8A679A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0716B0D1-A026-4C89-88AA-6EB6C8A679A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0716B0D1-A026-4C89-88AA-6EB6C8A679A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0716B0D1-A026-4C89-88AA-6EB6C8A679A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {93E098C4-656F-42A6-9F54-A246F0567E84}
+	EndGlobalSection
+EndGlobal
