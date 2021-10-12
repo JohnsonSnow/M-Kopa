@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/dd4h0d+RZfJ8s6d3n0h1+uEMRtsaew41zru0gpnx22cT3t5m9dcKAcTcO7rxcTuSrTMRDiIc6jPocV9zL3B+A==",
+  "dgSpecHash": "QmTrjhtLDK3bnQa++RI/jeplHUp1xQlF8xb6mFKYfVFo+0sY+0TDEXvlqdGfs1ApA4FuONnnb+DoHS2aFSwswg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\MKopa\\MKopaService\\MKopaService.csproj",
   "expectedPackageFiles": [
@@ -45,6 +45,7 @@
     "C:\\Users\\jokorie\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\jokorie\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\jokorie\\.nuget\\packages\\ninject\\3.3.4\\ninject.3.3.4.nupkg.sha512",
+    "C:\\Users\\jokorie\\.nuget\\packages\\polly\\7.2.2\\polly.7.2.2.nupkg.sha512",
     "C:\\Users\\jokorie\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\jokorie\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",

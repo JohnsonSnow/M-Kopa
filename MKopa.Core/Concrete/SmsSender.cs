@@ -50,23 +50,11 @@ namespace MKopa.Core.Concrete
             var httpContent = new StringContent(JsonSerializer.Serialize(model),
                 Encoding.UTF8,
                 "application/json");
-            var response = await _httpClient.PostAsync("", httpContent);
+            var response = await _httpClient.PostAsync(_configuration["SmsUri"], httpContent);
 
             if (response.IsSuccessStatusCode)
             {
-                Console.WriteLine("--> Saving the sms message to DB");
-                _context.Sms.Add(model);
-
-                Console.WriteLine($"--> Sending sms via twillo");
-                var message = await MessageResource.CreateAsync(
-                    body: "Dear Customer, Your Mkopa subscription will end in 3 days time. please re-subscribe.",
-                    from: new Twilio.Types.PhoneNumber(_configuration["TwilloPhoneNumber"]),
-                    to: new Twilio.Types.PhoneNumber(model.PhoneNumber)
-                );
-                Console.WriteLine(message.Sid);
-
-                Console.WriteLine("--> sync call to send sms was Ok");
-
+               
                 return true;
             }
             else
@@ -75,7 +63,7 @@ namespace MKopa.Core.Concrete
                 return false;
             }
 
-            return true;
+
         }
     }
 }

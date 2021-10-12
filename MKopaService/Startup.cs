@@ -16,6 +16,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Polly;
+
 
 namespace MKopaService
 {
@@ -35,6 +37,7 @@ namespace MKopaService
             services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connectionString));
 
             services.AddScoped<ISmsSender, SmsSender>();
+            services.AddScoped<ISmsSender, TwilloSms>();
             services.AddSingleton<IMessageBusClient, MessageBusClient>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -51,6 +54,7 @@ namespace MKopaService
             services.AddSingleton(mapper);
 
             services.AddHttpClient<ISmsSender, SmsSender>();
+            //services.AddHttpClient<ISmsSender, SmsSender>().AddTransientHttpErrorPolicy(x => x.WaitAndRetryAsync(3, _ => TimeSpan.FromMilliseconds(300)));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,7 +67,7 @@ namespace MKopaService
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MKopaService v1"));
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

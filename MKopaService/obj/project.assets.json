@@ -552,6 +552,15 @@
           "lib/netstandard2.0/Ninject.dll": {}
         }
       },
+      "Polly/7.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {}
+        }
+      },
       "RabbitMQ.Client/6.2.2": {
         "type": "package",
         "dependencies": {
@@ -2601,6 +2610,29 @@
         "lib/netstandard2.0/Ninject.xml",
         "ninject.3.3.4.nupkg.sha512",
         "ninject.nuspec"
+      ]
+    },
+    "Polly/7.2.2": {
+      "sha512": "E6CeKyS513j7taKAq4q2MESDBvzuzWnR1rQ2Y2zqJvpiVtKMm699Aubb20MUPBDmb0Ov8PmcLHTCVFdCjoy2kA==",
+      "type": "package",
+      "path": "polly/7.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Polly.dll",
+        "lib/net461/Polly.pdb",
+        "lib/net461/Polly.xml",
+        "lib/net472/Polly.dll",
+        "lib/net472/Polly.pdb",
+        "lib/net472/Polly.xml",
+        "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.pdb",
+        "lib/netstandard1.1/Polly.xml",
+        "lib/netstandard2.0/Polly.dll",
+        "lib/netstandard2.0/Polly.pdb",
+        "lib/netstandard2.0/Polly.xml",
+        "polly.7.2.2.nupkg.sha512",
+        "polly.nuspec"
       ]
     },
     "RabbitMQ.Client/6.2.2": {
@@ -5962,6 +5994,7 @@
       "AutoMapper >= 9.0.0",
       "MKopa.Core >= 1.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.13",
+      "Polly >= 7.2.2",
       "Swashbuckle.AspNetCore >= 5.6.3",
       "Twilio >= 5.66.0"
     ]
@@ -6026,6 +6059,10 @@
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
             "target": "Package",
             "version": "[1.10.13, )"
+          },
+          "Polly": {
+            "target": "Package",
+            "version": "[7.2.2, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
