@@ -10,5 +10,6 @@ namespace MKopa.Core.Abstract
     public interface IMessageBusClient
     {
         void PublishNewSendSMS(PublishedDto publishedDto);
+       // void SubscribeToNewSendSMS(PublishedDto publishedDto);
     }
 }

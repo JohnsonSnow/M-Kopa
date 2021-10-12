@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\MKopa\\MKopaService\\MKopaService.csproj": {}
+    "C:\\Projects\\MKopa\\MkopaService\\MKopaService.csproj": {}
   },
   "projects": {
     "C:\\Projects\\MKopa\\MKopa.Core\\MKopa.Core.csproj": {
@@ -103,14 +103,14 @@
         }
       }
     },
-    "C:\\Projects\\MKopa\\MKopaService\\MKopaService.csproj": {
+    "C:\\Projects\\MKopa\\MkopaService\\MKopaService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\MKopa\\MKopaService\\MKopaService.csproj",
+        "projectUniqueName": "C:\\Projects\\MKopa\\MkopaService\\MKopaService.csproj",
         "projectName": "MKopaService",
-        "projectPath": "C:\\Projects\\MKopa\\MKopaService\\MKopaService.csproj",
+        "projectPath": "C:\\Projects\\MKopa\\MkopaService\\MKopaService.csproj",
         "packagesPath": "C:\\Users\\jokorie\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\MKopa\\MKopaService\\obj\\",
+        "outputPath": "C:\\Projects\\MKopa\\MkopaService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

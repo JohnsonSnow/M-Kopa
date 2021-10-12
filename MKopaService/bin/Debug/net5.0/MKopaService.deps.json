@@ -36,6 +36,7 @@
           "AutoMapper": "9.0.0",
           "MKopa.Core": "1.0.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.13",
+          "Polly": "7.2.2",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Twilio": "5.66.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -736,6 +737,17 @@
         },
         "compile": {
           "lib/netstandard2.0/Ninject.dll": {}
+        }
+      },
+      "Polly/7.2.2": {
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.2.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {}
         }
       },
       "RabbitMQ.Client/6.2.2": {
@@ -3393,6 +3405,13 @@
       "sha512": "sha512-CmbWW97FfJuh4LEOVZM/spqXl4KAulRUjqeMwRd5J9rDMQArmIYaDMU3pyzXXHT062tbF0OPIMwI7tSOtprPfg==",
       "path": "ninject/3.3.4",
       "hashPath": "ninject.3.3.4.nupkg.sha512"
+    },
+    "Polly/7.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E6CeKyS513j7taKAq4q2MESDBvzuzWnR1rQ2Y2zqJvpiVtKMm699Aubb20MUPBDmb0Ov8PmcLHTCVFdCjoy2kA==",
+      "path": "polly/7.2.2",
+      "hashPath": "polly.7.2.2.nupkg.sha512"
     },
     "RabbitMQ.Client/6.2.2": {
       "type": "package",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QmTrjhtLDK3bnQa++RI/jeplHUp1xQlF8xb6mFKYfVFo+0sY+0TDEXvlqdGfs1ApA4FuONnnb+DoHS2aFSwswg==",
+  "dgSpecHash": "3bVwQpSiqQ4Pu+2lO4YydqJt7qOr9EwhmIkTbS4x4ym076tp9luiv6Guh5Ub8uulrFlK6awlIoaKlEPSoNEPkQ==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\MKopa\\MKopaService\\MKopaService.csproj",
+  "projectFilePath": "C:\\Projects\\MKopa\\MkopaService\\MKopaService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jokorie\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\jokorie\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

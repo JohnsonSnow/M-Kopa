@@ -79,3 +79,4 @@ C:\Projects\MKopa\MKopaService\bin\Debug\net5.0\ref\MKopaService.dll
 C:\Projects\MKopa\MKopaService\bin\Debug\net5.0\MKopaService.pdb
 C:\Projects\MKopa\MKopaService\obj\Debug\net5.0\MKopaService.csproj.CopyComplete
 C:\Projects\MKopa\MKopaService\obj\Debug\net5.0\MKopaService.genruntimeconfig.cache
+C:\Projects\MKopa\MkopaService\bin\Debug\net5.0\Polly.dll
